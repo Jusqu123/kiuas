@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// just testing some saving but its not working
 namespace Demo3tehtävä1
 {
     class Heater
@@ -19,8 +19,13 @@ namespace Demo3tehtävä1
         {
 
             Console.WriteLine("Heater : ");
-            Console.WriteLine("- Temperature :{0} Humidity {1}: IsOn: ",Temperature,Humidity,IsOn);
+            Console.WriteLine("- Temperature :{0} Humidity {1}: IsOn: {2} ",Temperature,Humidity,IsOn);
          
+        }
+        // method returns heater data
+        public override string ToString()
+        {
+            return "Temperature :" + Temperature + "humidity : " + Humidity + "IsOn : " + IsOn;
         }
     }
 }

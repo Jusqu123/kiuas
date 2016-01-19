@@ -16,6 +16,7 @@ namespace Demo3tehtävä1
             heater.Temperature = 100;
             heater.Humidity = 95;
             heater.PrintData();
+            Console.WriteLine(heater.ToString());
             Console.ReadLine();
         }
     }
